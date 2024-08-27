@@ -1,4 +1,4 @@
-package Futbol;
+package futbol;
 
 public class Jugador extends Futbolista{
     public short golesMarcados;
@@ -18,10 +18,11 @@ public class Jugador extends Futbolista{
     }
 
     /*~~~ Métodos ~~~*/
-    public int compareTo (Jugador j){
-        if (j instanceof Futbolista)
+    @Override
+    public int compareTo (Futbolista f){
+        if (f instanceof Jugador)
         {
-            return this.edad - ((Futbolista) j).edad;
+            return this.edad - ((Jugador) f).edad;
         }
         return 0;
     }

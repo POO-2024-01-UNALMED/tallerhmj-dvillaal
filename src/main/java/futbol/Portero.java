@@ -1,4 +1,4 @@
-package Futbol;
+package futbol;
 
 public class Portero extends Futbolista {
     public short golesRecibidos;
@@ -20,6 +20,7 @@ public class Portero extends Futbolista {
         return super.toString() + " con el dorsal " + this.dorsal + ". Le han marcado " + this.golesRecibidos;
     }
 
+    @Override
     public int compareTo(Futbolista f) {
         if (f instanceof Portero) {
             return this.golesRecibidos - ((Portero) f).golesRecibidos;

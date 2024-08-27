@@ -1,4 +1,4 @@
-package Futbol;
+package futbol;
 
 public abstract class Futbolista implements Comparable<Futbolista>{
     protected String nombre;
